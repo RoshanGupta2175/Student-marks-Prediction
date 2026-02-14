@@ -1,28 +1,25 @@
-📘 Student Marks Prediction – Machine Learning Project
+📘 Student Marks Prediction using Machine Learning
 📌 Overview
 
-This project builds an end-to-end machine learning model to predict a student’s final exam score based on study hours, sleep duration, attendance, and previous performance. The goal is to understand how different factors influence academic results and to implement the full ML pipeline from data analysis to prediction.
+This project develops an end-to-end Machine Learning pipeline to predict a student’s final exam score based on key academic and lifestyle factors such as study time, sleep duration, attendance, and previous performance.
+
+The objective is to discover how these variables influence results and to transform raw data into accurate predictions.
 
 🎯 Problem Statement
 
-Given several attributes of a student, predict the final score.
-Since the output is numerical, this is a regression problem.
+Given multiple attributes describing a student’s habits and academic history, predict the final exam marks.
+
+Because the output is a continuous numeric value, the task is a regression problem.
 
 🧠 Skills Demonstrated
 
-Data loading and preprocessing
-
-Exploratory Data Analysis (EDA)
-
-Feature and target separation
-
-Train-test splitting
-
-Model training using Linear Regression
-
-Performance evaluation
-
-Future prediction on new data
+✔ Data loading & preprocessing
+✔ Exploratory Data Analysis (EDA)
+✔ Feature engineering
+✔ Train–test splitting
+✔ Model training with Linear Regression
+✔ Model performance evaluation
+✔ Making predictions on unseen data
 
 🛠️ Tech Stack
 
@@ -36,54 +33,67 @@ Matplotlib / Seaborn
 
 Scikit-learn
 
-📂 Dataset Features
+📂 Dataset Description
+Feature	Description
+study_hours	Number of hours spent studying
+sleep_hours	Average daily sleep
+attendance	Attendance percentage
+previous_score	Marks obtained in earlier exams
+final_score	🎯 Target variable to predict
+📊 Exploratory Data Analysis (EDA)
 
-study_hours – hours spent studying
+Data visualization helped uncover patterns and relationships.
 
-sleep_hours – daily sleep duration
+Students who studied more tended to score higher.
 
-attendance – attendance percentage
+Previous performance showed strong correlation with final marks.
 
-previous_score – earlier exam marks
+Attendance positively impacted outcomes.
 
-final_score – target variable
+Heatmaps and scatter plots made trends easy to observe.
 
-📊 Exploratory Data Analysis
+🤖 Model Used – Linear Regression
 
-EDA was performed to understand relationships between variables.
-Correlation heatmaps and scatter plots showed that study hours and previous scores have strong influence on final performance.
+Linear Regression was applied to learn how input variables influence final scores.
 
-🤖 Model Used
-
-Linear Regression was used to learn the relationship between input features and the final score.
+It finds the best mathematical relationship between features and the target to minimize prediction error.
 
 📏 Model Evaluation
 
-Mean Absolute Error (MAE): ~5
+Mean Absolute Error (MAE): ~5 marks
 
 R² Score: ~0.79
 
-These results indicate the model predictions are close to actual values and capture most of the variance.
+This means the model predicts very close to actual values and explains most of the variation in results.
 
 🔮 Future Prediction
 
-The trained model can take details of a new student and estimate the expected final marks.
 
-Example input:
+The trained model can estimate results for new students.
 
-study_hours = 6
-sleep_hours = 7
-attendance = 85
+Code
+  
+Example Input:
+
+study_hours = 6  
+sleep_hours = 7  
+attendance = 85  
 previous_score = 70
 
-🚀 Learning Outcome
 
-This project helped me understand the complete machine learning lifecycle:
-data understanding → visualization → model building → evaluation → prediction.
+➡ The system outputs the expected final exam score.
+
+🚀 Learning Outcomes
+
+Through this project, I gained practical understanding of the complete ML lifecycle:
+
+Data → Analysis → Visualization → Training → Evaluation → Prediction
+
+I also improved my skills in model interpretation and real-world problem solving.
 
 🙋‍♂️ Author
 
 Roshan Gupta
 
 I am continuously learning and building projects in Data Science and Machine Learning.
-Feedback and suggestions are welcome!
+Feedback, ideas, and collaboration are always welcome!
